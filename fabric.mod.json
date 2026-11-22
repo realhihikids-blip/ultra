@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpclient",
+  "version": "${version}",
+  "name": "Blip Client",
+  "description": "Blip Client: a customizable Fabric client with ClickGUI, HUD widgets and visual tools for private test worlds.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["pvpclient.mixins.json"],
+  "entrypoints": {
+    "client": ["com.pvpclient.PvpClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
